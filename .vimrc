@@ -313,6 +313,14 @@ let g:syntastic_enable_signs = 0
 "let g:syntastic_style_error_symbol = '✗'
 "let g:syntastic_style_warning_symbol = '⚠'
 
+" --------Append by Xingzw----------
+" ==================================
+let g:syntastic_quiet_messages = {'level': 'warnings'}
+let g:syntastic_python_flake8_args="--ignore=E501,W601"
+" let g:syntastic_enable_highlighting = 0
+" ==================================
+
+
 " Jedi-vim ------------------------------
 
 " All these mappings work only for python code:
