@@ -35,31 +35,42 @@ call plug#begin('~/.vim/plugged')
 
 " Override configs by directory 
 Plug 'arielrossanigo/dir-configs-override.vim'
-" Better file browser
+" Better file browser | usage: F3
 Plug 'scrooloose/nerdtree'
-" Code commenter
+" Code commenter, | usage: <leader>+cc comment <leader>+cu uncomment
 Plug 'scrooloose/nerdcommenter'
-" Class/module browser
+" Class/module browser | usage: F4
 Plug 'majutsushi/tagbar'
-" Code and files fuzzy finder
+" Code and files fuzzy finder | ,e  ,g  ,G  ,f  ,m
 Plug 'ctrlpvim/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
 Plug 'fisadev/vim-ctrlp-cmdpalette'
-" Zen coding
+
+" Zen coding |write html code like: ul>li.item$*5
 Plug 'mattn/emmet-vim'
-" Git integration
+
+" Git integration !!! This project is no longer maintained. You may want to
+" use tpope/vim-fugitive. !!!
 Plug 'motemen/git-vim'
-" Tab list panel
+
+" Tab list panel | tl  tf
 Plug 'kien/tabman.vim'
+
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 " Terminal Vim with 256 colors colorscheme
 Plug 'fisadev/fisa-vim-colorscheme'
-" Consoles as buffers
-Plug 'rosenfeld/conque-term'
+"
+" ----- Change by Xingzw----------
+" Consoles as buffers Run interactive commands inside a Vim buffer
+"Plug 'rosenfeld/conque-term'
+" -------------------------------
+
 " Pending tasks list
 Plug 'fisadev/FixedTaskList.vim'
+
 " Surround
 Plug 'tpope/vim-surround'
 " Autoclose
@@ -68,10 +79,13 @@ Plug 'Townk/vim-autoclose'
 Plug 'michaeljsmith/vim-indent-object'
 " Indentation based movements
 Plug 'jeetsukumaran/vim-indentwise'
-" Python autocompletion, go to definition.
+
+" Python autocompletion, go to definition. | usage: ,d ,D ,o 
 Plug 'davidhalter/jedi-vim'
+
 " Better autocompletion
 Plug 'Shougo/neocomplcache.vim'
+
 " Snippets manager (SnipMate), dependencies, and snippets repo
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -83,23 +97,22 @@ Plug 'mhinz/vim-signify'
 Plug 'fisadev/vim-isort'
 " Drag visual blocks arround
 Plug 'fisadev/dragvisuals.vim'
-" Window chooser
+
+" Window chooser | Alt + -> 
 Plug 't9md/vim-choosewin'
+
 " Python and other languages code checker
 Plug 'scrooloose/syntastic'
 " Paint css colors with the real color
 Plug 'lilydjwg/colorizer'
 " Ack code search (requires ack installed in the system)
 Plug 'mileszs/ack.vim'
-
-" -------Change by Xingzw------
-" =============================
+" -------change by xingzw-------
 "if has('python')
     " YAPF formatter for Python
-"    Plug 'pignacio/vim-yapf-format'
+    "Plug 'pignacio/vim-yapf-format'
 "endif
-" =============================
-
+" ---------------------------
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
