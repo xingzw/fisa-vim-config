@@ -6,17 +6,18 @@ A vim configuration for the modern pythonista (plus some other goodies)
 Installation instructions and docs `here <http://fisadev.github.io/fisa-vim-config/>`_.
 
 ===============
-FROM http://fisadev.github.io/fisa-vim-config/
 
-0) You will need a vim compiled with python support. Check it with vim --version | grep +python
+0) vim要求编译时选择支持python或python3. vim --version | grep +python
 
-Also, your .vim folder should be empty. If you have one, rename it or move to a different location (to keep a backup, just in case you want to go back).
+删除或清空.vim文件夹
 
-1) Install the required dependencies:
+1) 安装依赖包
 
 sudo apt-get install curl vim exuberant-ctags git ack-grep
 sudo pip install pep8 flake8 pyflakes isort yapf
 
-2) Download the .vimrc file and place it in your linux home folder.
+2) 下载 .vimrc 文件放入户主目录
 
-3) Open vim and it will continue the installation by itself. Wait for it to finish... and done! You now have your new shiny powerful vim :)
+3) 运行vim即开始自动安装软件包，耐心等待安装过程结束.
+
+4) 将plugin目录和autoload目录下的文件拷贝到.vim下相应目录中即可激活YAPF，vim中:YAPF 对代码重新格式化。

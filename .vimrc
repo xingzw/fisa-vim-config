@@ -91,10 +91,15 @@ Plug 'scrooloose/syntastic'
 Plug 'lilydjwg/colorizer'
 " Ack code search (requires ack installed in the system)
 Plug 'mileszs/ack.vim'
-if has('python')
+
+" -------Change by Xingzw------
+" =============================
+"if has('python')
     " YAPF formatter for Python
-    Plug 'pignacio/vim-yapf-format'
-endif
+"    Plug 'pignacio/vim-yapf-format'
+"endif
+" =============================
+
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
