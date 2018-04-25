@@ -276,8 +276,11 @@ nmap ,t :NERDTreeFind<CR>
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 
-" Tasklist ------------------------------
+" Run Python program -------Change by xingzw-------------------
+nmap <F5> <Esc>:w<CR>:!clear;python %<CR>
 
+
+" Tasklist ------------------------------
 " show pending tasks list
 map <F2> :TaskList<CR>
 
