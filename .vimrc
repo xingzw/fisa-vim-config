@@ -279,6 +279,9 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 " Run Python program -------Change by xingzw-------------------
 nmap <F5> <Esc>:w<CR>:!clear;python %<CR>
 
+" Refactor rename variable name -------Change by xingzw -------------
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
 
 " Tasklist ------------------------------
 " show pending tasks list
