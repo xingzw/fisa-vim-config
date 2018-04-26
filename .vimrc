@@ -280,7 +280,11 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 nmap <F5> <Esc>:w<CR>:!clear;python %<CR>
 
 " Refactor rename variable name -------Change by xingzw -------------
-nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+nmap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+" Turn off highlight until next search ----Change by xingzw -------
+nmap <Leader>h :noh<CR>
+
 
 
 " Tasklist ------------------------------
