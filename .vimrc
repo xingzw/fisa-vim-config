@@ -277,7 +277,8 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 
 " Run Python program -------Change by xingzw-------------------
-nmap <F5> <Esc>:w<CR>:!clear;python %<CR>
+"nmap <F5> <Esc>:w<CR>:!clear;python %<CR>
+nmap <F5> <Esc>:!clear;python %<CR>
 
 " Refactor rename variable name -------Change by xingzw -------------
 nmap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
