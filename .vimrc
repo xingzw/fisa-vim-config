@@ -285,8 +285,8 @@ nmap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " Turn off highlight until next search ----Change by xingzw -------
 nmap <Leader>h :noh<CR>
-
-
+" Format code by YAPF  -------change by xingzw --------
+nmap <Leader>f :YAPF<CR>
 
 " Tasklist ------------------------------
 " show pending tasks list
