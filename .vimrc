@@ -6,6 +6,8 @@
 " Vim-plug initialization
 " Avoid modify this section, unless you are very sure of what you are doing
 
+set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
+
 let vim_plug_just_installed = 0
 let vim_plug_path = expand('~/.vim/autoload/plug.vim')
 if !filereadable(vim_plug_path)
